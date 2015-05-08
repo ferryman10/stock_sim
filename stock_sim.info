@@ -1,0 +1,3 @@
+name = stock_sim
+description = Module for portfolio management.
+core = 7.x
