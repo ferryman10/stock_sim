@@ -1,1 +1,21 @@
 <?php
+/** 
+* Declaring help fuction 
+*/
+function stock_sim_help($path, $arg) {
+	switch ($path) {
+		case "admin/help#current_posts":
+			return '<p>' . t("Provides portfolio management functonality.") . '</p>';
+			break;
+	}
+}
+function stock_sim_block_info() {
+$blocks['current_posts'] = array(
+    'info' => t('Current posts'),
+    // Default setting.
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+  return $blocks;
+
+
+}
